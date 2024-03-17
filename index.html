@@ -9,7 +9,7 @@
             margin: 0;
             padding: 0;
             height: 100%;
-            font-family: Arial, sans-serif;
+            font-family: 標楷體, sans-serif;
         }
 
         .background {
@@ -56,16 +56,5 @@
         <a href="https://www.netflix.com/tw/" target="_blank" style="color: #0077CC;">點此前往 Netflix</a>
     </div>
 </div>
-<script>
-    const images = document.querySelectorAll('.exclusive-movies img');
-
-    images.forEach(image => {
-        image.addEventListener('click', () => {
-            image.style.display = 'none'; // Hide the clicked image
-            const nextIndex = (Array.from(images).indexOf(image) + 1) % images.length;
-            images[nextIndex].style.display = 'block'; // Show the next image
-        });
-    });
-</script>
 </body>
 </html>
