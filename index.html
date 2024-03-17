@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix 追劇等候頁面</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Arial, sans-serif;
+        }
+
+        .background {
+            background-image: url('background.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .content {
+            text-align: center;
+            color: white;
+            margin-top: -200px;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .exclusive-movies img {
+            width: 200px;
+            height: 300px;
+            margin-right: 10px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .exclusive-movies img:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+<div class="background">
+    <div class="content" style="font-family: '標楷體', sans-serif; color: #333;">
+        <h1>正在努力加載...</h1>
+        <p>歡迎來到 Netflix，請稍等片刻。</p>
+        <a href="https://www.netflix.com/tw/" target="_blank" style="color: #0077CC;">點此前往 Netflix</a>
+    </div>
+</div>
+<script>
+    const images = document.querySelectorAll('.exclusive-movies img');
+
+    images.forEach(image => {
+        image.addEventListener('click', () => {
+            image.style.display = 'none'; // Hide the clicked image
+            const nextIndex = (Array.from(images).indexOf(image) + 1) % images.length;
+            images[nextIndex].style.display = 'block'; // Show the next image
+        });
+    });
+</script>
+</body>
+</html>
