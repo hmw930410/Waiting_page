@@ -1,47 +1,47 @@
 <!DOCTYPE html>
-<html lang="zh-TW">
+<html lang="zh-TW"> <!-- 設定網頁語言為繁體中文 -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Netflix 追劇等候頁面</title>
+    <title>Netflix 追劇等候頁面</title> <!-- 設定網頁標題 -->
     <style>
         body, html {
             margin: 0;
             padding: 0;
             height: 100%;
-            font-family: 標楷體, sans-serif;
+            font-family: 標楷體, sans-serif; /* 設定字型為標楷體或系統 sans-serif */
         }
 
         .background {
-            background-image: url('background.jpg');
-            background-size: cover;
-            background-position: center;
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+            background-image: url('background.jpg'); /* 背景圖片 */
+            background-size: cover; /* 背景圖片自適應大小 */
+            background-position: center; /* 背景圖片置中 */
+            height: 100%; /* 設定背景高度佔滿整個視窗 */
+            display: flex; /* 使用 flexbox 來排列內容 */
+            flex-direction: column; /* 主軸為垂直方向 */
+            justify-content: center; /* 內容垂直置中 */
+            align-items: center; /* 內容水平置中 */
         }
 
         .content {
-            text-align: center;
-            color: white;
-            margin-top: -200px;
+            text-align: center; /* 文字置中對齊 */
+            color: white; /* 文字顏色為白色 */
+            margin-top: -200px; /* 上方間距設定為 -200px，將內容往上移動 */
         }
 
         a {
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
+            color: white; /* 超連結文字顏色為白色 */
+            text-decoration: none; /* 移除超連結下劃線 */
+            font-weight: bold; /* 超連結文字加粗 */
         }
     </style>
 </head>
 <body>
-<div class="background">
-    <div class="content" style="font-family: '標楷體', sans-serif; color: #333;">
-        <h1>正在努力加載...</h1>
-        <p>歡迎來到 Netflix，請稍等片刻。</p>
-        <a href="https://www.netflix.com/tw/" target="_blank" style="color: #0077CC;">點此前往 Netflix</a>
+<div class="background"> <!-- 背景區塊 -->
+    <div class="content" style="font-family: '標楷體', sans-serif; color: #333;"> <!-- 內容區塊 -->
+        <h1>正在努力加載...</h1> <!-- 顯示加載中提示 -->
+        <p>歡迎來到 Netflix，請稍等片刻。</p> <!-- 歡迎詞句 -->
+        <a href="https://www.netflix.com/tw/" target="_blank" style="color: #0077CC;">點此前往 Netflix</a> <!-- 提供前往 Netflix 的連結 -->
     </div>
 </div>
 </body>
